@@ -1,0 +1,34 @@
+.body{
+  background-color: cyan;
+}
+
+#heading{
+  padding-top: 2%;
+  font-family: Comic Sans MS;
+}
+#quote-box{
+  border-radius: 5px;
+  border-style: solid;
+  border-color: grey;
+  
+  background-color: #eee;
+  margin-top: 5%;
+}
+#text{
+  padding: 0% 2% 0% 2%;
+}
+#quote{
+  font-family: Garamond;
+}
+#author{
+  text-align: right;
+  padding-right: 2%;
+  font-family: Courier;
+}
+#btns{
+  text-align: center;
+  margin: 2%;
+}
+footer{
+  margin-bottom: 5%;
+}
