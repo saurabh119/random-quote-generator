@@ -6,26 +6,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-    	$(document).ready(function(){
-  $.getJSON('https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json',function(json){
-    if(typeof json === 'string'){
-      json = JSON.parse(json)
-    }
-    $("#new-quote").on("click",function(){
-        var rn = Math.floor(Math.random()*json.quotes.length);
-        var quoteData = json.quotes[rn];
-        $("#quote").html(quoteData.quote);
-        var author = '<h4><strong>'+quoteData.author+'</h4>';
-        $("#author").html(author);
-      });
-    $('#tweet-quote').click(function() {
-    window.open('https://twitter.com/intent/tweet?text=' + $("#quote").html() + " - " + $("#author").text());
-    });
-  });
-  
-});
-    </script>
+    <script type="text/javascript" src="quote.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -49,7 +30,7 @@
       <button class="btn btn-primary btn-default" id="new-quote"><i class="fa fa-refresh"></i> Refresh</button>
       <button id="tweet-quote" class="btn btn-primary"><i class="fa fa-twitter"></i> Tweet</button>
     </div>
-    <footer><center>Created by <a href="http://saurabh119.github.io" target="_blank">Saurabh Biyani</a> © 2018</footer>
+    <footer><center>Created by <a href="http://saurabh119.github.io" target="_blank">Saurabh Biyani</a> Â© 2018</footer>
   </div>
 </body>
 </html>  
